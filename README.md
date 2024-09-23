@@ -41,6 +41,7 @@ run_resnet.py: Training framework using the ResNet .
 
 ### `dataset` 
 Stores datasets used for training and evaluating models.
+Please download the dataset at the specified link in dataset.txt
 
 - **`cdata`**
   - **Subdirectories:**
@@ -56,6 +57,7 @@ Stores datasets used for training and evaluating models.
 Contains pretrained models and scripts for model training.
 
 - **`codebert`** the pre-trained CodeBERT model
+- Please download the dataset at the specified link in codebert.txt
 
 - **`CVAE`** Conditional Variational Autoencoder (CVAE) model files.
 

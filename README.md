@@ -52,7 +52,8 @@ Contains pretrained models and scripts for model training.
 ## Replication Process
 ### `Step 1: Dataset and ModelPreparation`
 1.Download the datasets by visiting the link provided in dataset.txt.
-1.Download the pretrained model by visiting the link provided in models/codebert.txt.
+
+2.Download the pretrained model by visiting the link provided in models/codebert.txt.
 
 ### `Step 2: Environment Preparation`
 - Python: 3.8

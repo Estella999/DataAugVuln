@@ -9,18 +9,6 @@ This work struggle to solve the presence of labeling errors and characterizing n
 and imbalanced knowledge distribution within the code.AugVuln that integrates code quality detection with Relational Graph Neural Networks (RGNNs) to improve root cause detection by more effectively capturing code changes. Specifically, the AugVuln incorporates three key components: (1) the Vulnerability Confidence Extractor for detecting and cleaning erroneous labels; (2) the Code Generation Enhancer, which generates balanced synthetic test cases via Conditional Variational Autoencoders (CVAE); and (3) the Path-Aware Vulnerability Detector, which employs Relational Graph Neural Networks (RGNNs) to capture changes in code lines and integrates residual networks to learn detailed representations of code execution paths.Through the synergistic operation of these three components, AugVuln effectively handles code lines with noisy labels and imbalanced knowledge distribution, leading to significant improvements in vulnerability detection
 
 
-## Requirements
-
-- Python: 3.8
-- Pytorch: 1.11.0+cu113
-- networkx: 2.8.5
-- numpy: 1.22.3
-- scikit-learn: 1.1.1
-- scipy: 1.8.1
-- tree-sitter: 0.20.1
-- cleanlab:0.1.1
-
-
 ## Directory Structure
 
 ### `code`
@@ -61,8 +49,34 @@ Contains pretrained models and scripts for model training.
 
 - **`CVAE`** Conditional Variational Autoencoder (CVAE) model files.
 
+## Replication Process
+### `Step 1: Dataset and ModelPreparation`
+1.Download the datasets by visiting the link provided in dataset.txt.
+1.Download the pretrained model by visiting the link provided in models/codebert.txt.
 
+### `Step 2: Environment Preparation`
+- Python: 3.8
+- Pytorch: 1.11.0+cu113
+- networkx: 2.8.5
+- numpy: 1.22.3
+- scikit-learn: 1.1.1
+- scipy: 1.8.1
+- tree-sitter: 0.20.1
+- cleanlab:0.1.1
+  
+### `Step 3: train and test`
+Under CNN model
+`python run_cnn.py`
 
+Under ResNet
+`python run_resnet.py`
+
+#### Please note to modify the corresponding configuration parameters
+1. Select the current running mode (train/test)
+2. The language and path of the current dataset and the path to save the processed file(train_process_data_file) and result(output_dir and output_dir_before)
+3. Model path
+4. Related ablation experiment parameter configuration
+5. VCEorCGE component call settings
 ---
 
 

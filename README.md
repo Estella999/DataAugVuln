@@ -53,7 +53,7 @@ Contains pretrained models and scripts for model training.
 ### `Step 1: Dataset and ModelPreparation`
 1.Download the datasets by visiting the link provided in dataset.txt.
 
-2.Download the pretrained model by visiting the link provided in models/codebert.txt.
+2.Download the pre-trained model by visiting the link provided in models/codebert.txt.
 
 ### `Step 2: Environment Preparation`
 - Python: 3.8
@@ -74,10 +74,10 @@ Under ResNet
 
 #### Please note to modify the corresponding configuration parameters
 1. Select the current running mode (train/test)
-2. The language and path of the current dataset and the path to save the processed file(train_process_data_file) and result(output_dir and output_dir_before)
-3. Model path
-4. Related ablation experiment parameter configuration
-5. VCEorCGE component call settings
+2. The language and path of the current dataset(`train_data_file`、`test_data_file` and `pkl_file` ) and the path to save the processed dataset file(`train_process_data_file`) and result(`output_dir` and `output_dir_before`)
+3. Model path（That is, the location where the downloaded pre-trained model is placed. We recommend placing it under `models`）
+4. Related ablation experiment parameter configuration(`threshold` and `splits_num`)
+5. VCEorCGE component call settings(`True` means entering the VCE component first and then the CGE component)
 ---
 
 

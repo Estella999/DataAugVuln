@@ -230,7 +230,7 @@ def setup_args():
     args.eval_batch_size = 64
     args.epoch = 2
     args.cl_epoch = 8
-    args.splits_num = 2# 折数过低会导致结果异常
+    args.splits_num = 2
     
     #cvae
     args.encoder_layer_sizes = 0
